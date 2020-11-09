@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:ital,wght@0,500;0,700;1,400&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.styles_scroll-to-top__2A70v{
+    background: #777676 !important;
+    padding: 15px;
+    border-radius: 50% !important;
+    width: 50px !important;
+    height: 50px !important;
+    outline: none !important;
+}

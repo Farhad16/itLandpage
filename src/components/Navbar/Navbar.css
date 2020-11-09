@@ -1,0 +1,115 @@
+
+
+/* navsection style */
+.navsection{
+    background:  rgb(1, 83, 110);
+    position: fixed;
+    padding: 30px 0;
+    width: 100%;
+    font-family: 'Ubuntu', sans-serif;
+    transition: all 0.6s ease;
+    z-index: 9999;
+}
+
+
+.active{
+    background: #ffffff;
+    padding: 15px 0;
+    box-shadow: none;
+    z-index: 9999;
+}
+
+.navsection .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navsection ul{
+    margin: 0;
+}
+
+.navsection .menu li{
+    display: inline-block;
+    list-style: none;
+}
+
+.navsection .logo a{
+    font-size: 30px;
+    font-weight: 500;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.navsection .logo a span{
+    color: #f5bd04;
+}
+
+
+.active .logo a{
+    color: #000000;
+}
+
+.navsection .menu li a{
+    color: #ffffff;
+    font-size: 16px;
+    margin-right: 25px;
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+.navsection .menu li a:hover{
+    color: #f5bd04;
+}
+
+.nav-active{
+    border-bottom: 3px solid  #f5bd04;
+    padding-bottom: 5px;
+}
+
+.active .menu li a{
+    color: #000000;
+}
+
+.active .menu li a:hover{
+    color: #fa0075;
+}
+
+.menu-btn{
+    color: #000000;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 947px){
+    .menu-btn{
+        display: block;
+        z-index: 999;
+    }
+    
+    .navsection .menu{
+        position: absolute;
+        background: rgba(29, 28, 28, 0.5);
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.5s ease;
+    }
+  
+    .navsection .menu.toggle{
+        left: 0;
+    }
+    .navsection .menu li{
+        display: block;
+    }
+  
+    .navsection .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+  
+    }
+}   

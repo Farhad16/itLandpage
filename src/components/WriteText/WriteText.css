@@ -1,0 +1,31 @@
+
+
+.write .title{
+    text-align: center;
+}
+.write .title::after{
+    content: "write";
+    background: #ffffff;
+}
+.shirt-content{
+    position: relative;
+}
+.shirt{
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.drag-box{
+    color: #f58d04;
+    position: absolute;
+    top: 50%;
+    left: 42%;
+    
+}
+
+.write-btn{
+    position: relative;
+    left: 46%;
+}

@@ -1,0 +1,63 @@
+.tools{
+    color: #000000;
+    position: relative;
+}
+
+.tools .title::before{
+    background: #000000;
+}
+
+.tools .title::after{
+    content: "tools";
+    background: #ffffff;
+}
+
+.tools .card{
+    background: #ffffff;
+    box-shadow: 5px 5px 10px rgba(122, 122, 122, 0.5);
+    border: none;
+}
+
+.tools .card .card-body{
+    background: rgb(235, 235, 235);
+}
+
+figure {
+	width:100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.tools .card figure img,
+.projects .card figure img
+{
+    height: 200px;
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+
+.tools .card figure:hover img,
+.projects .card figure:hover img {
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
+
+.tools .card a{
+    color: #000000;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.tools .card a:hover{
+    color: #f5a904;
+}
+
+.tools .card h5{
+    font-weight: 700;
+}
